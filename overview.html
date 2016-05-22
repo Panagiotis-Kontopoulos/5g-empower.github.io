@@ -1,0 +1,128 @@
+<html>
+<title>5G-EmPOWER - Overview</title>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-67276967-2', 'auto');
+	  ga('send', 'pageview');
+	</script>
+<head>
+<body>
+	<div class="navcontainer" style="margin:0px; background:#000;">
+		<div class="navholder">
+			<a href="/" class="logo"></a>
+			<a href="/" id="menu-icon"></a>
+			<nav>
+				<ul class="navigation">
+					<li><a href="overview.html">Overview</a></li>
+					<li><a href="usecases.html">Use Cases</a></li>
+					<li><a href="https://github.com/5g-empower/5g-empower.github.io/wiki">Documentation</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+					<li><a href="https://github.com/5g-empower/">Code</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="holder">
+			<p><h4>overview</h4></p>
+			<div class="circle">
+				<p>5G-EmPOWER builds upon a single platform consisting of general purpose hardware (x86) and operating system (Linux) in order to deliver three types of virtualized network resources: forwarding nodes (OpenFlow switches), packet processing nodes (Micro Servers), and radio processing nodes (WiFi Access Points or LTE eNodeBs).</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="feature1">
+		<div class="holder">
+			<div class="txtleft"><img src="images/empower_arch.png" width="500px"></div>
+			<div class="featuretxt">
+				<p><h4 style="text-align:left;">architecture</h4></p>
+				The 5G-EmPOWER architecture loosely follows the ETSI NFV MANO specifications. We name Programmable Data Plane, or PDP, the set of all virtualizaed network resources. The Wireless Termination Points, or WTPs, are the physical points of attachment in the RAN (e.g. the WiFi Access Points or the LTE eNodeBs). The Click Packet Processors, or CPPs, are Micro Servers combining forwarding with packet processing capabilities.
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="feature1">
+		<div class="holder">
+			<div class="featuretxt">
+				<p><h4 style="text-align:left;">service orchestration</h4></p>
+				In 5G-EmPOWER the physical network is abstracted into network slices. Each slice defines a particular connectivity service and consists of a set of VNFs with the associated SDN control logic. Each network slice can be fully customized in order to support the requirements of the service in term of coverage, capacity, latency, and security.</p>
+			</div>
+			<div class="txtleft"><img src="images/empower_service.png" width="500px"></div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="holder">
+			<p><h4>abstractions</h4></p>
+			<div class="circle">
+				<p>5G-EmPOWER builds upon a set of high-level programming abstractions providing developers with full visibility of the network state and allowing them to dynamically deploy and orchestrate network services.</p>
+				<p>The radio access network abstractions address four wireless networks control and management aspects, namely: state management, resource allocation, network monitoring, and network reconfiguration.</p>
+				<p>The Virtual Network Functions abstractions address three fundamental elements of VNF composition, namely: layer management (how to form a VNF chain), state management (how to migrate and scale VNFs), and network discovery (how to expose the network status).</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="holder">
+			<ul class="circle">
+				<li>
+					<h4>lvap</h4>
+					<p>The Light Virtual Access Point (LVAP) abstraction allows developers to describe the desired state of the network leaving to the controller the task of implementing it.</p>
+					<p><img src="images/lvap.png" width="180"></p>
+				</li>
+				<li>
+					<h4>lvnf</h4>
+					<p>The Light Virtual Network Function (LVNF) abstraction allows developers to perform custom packet processing operations on a precise subset of the traffic.</p>
+					<p><img src="images/lvnf.png" width="180"></p>
+				</li>
+				<li>
+					<h4>resource pool</h4>
+					<p>The Resource Pool abstraction allows developers to provision resources across different technologies using a common high-level logical model.</p>
+					<p><img src="images/pool.png" width="180"></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="holder">
+			<ul class="circle">
+
+				<li>
+					<h4>radio port</h4>
+					<p>The Radio Port abstraction separates real-time controller loops running near the air interface from non real-time tasks running at the centralized controller.</p>
+					<p><img src="images/rport.png" width="180"></p>
+				</li>
+				<li>
+					<h4>virtual port</h4>
+					<p>The Virtual Port abstraction allows developers to specify the portion of the network traffic that should be routed between two LVNFs.</p>
+					<p><img src="images/vport.png" width="180"></p>
+				</li>
+				<li>
+					<h4>network graph</h4>
+					<p>The Network Graph abstraction allows developers to gather the network state using high-level primitives over both the wireless and the wired segments.</p>
+					<p><img src="images/map.png" width="180"></p>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<br style="clear:both;" />
+
+	<div class="container2">
+		<div class="holder">
+			<p>5G-EmPOWER is available under an <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a></p>
+		</div>
+	</div>
+
+</body>
+
+</html>

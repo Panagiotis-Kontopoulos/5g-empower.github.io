@@ -1,0 +1,78 @@
+<html>
+<title>5G-EmPOWER - Use Cases</title>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-67276967-2', 'auto');
+	  ga('send', 'pageview');
+	</script>
+<head>
+<body>
+	<div class="navcontainer" style="margin:0px; background:#000;">
+		<div class="navholder">
+			<a href="/" class="logo"></a>
+			<a href="/" id="menu-icon"></a>
+			<nav>
+				<ul class="navigation">
+					<li><a href="overview.html">Overview</a></li>
+					<li><a href="usecases.html">Use Cases</a></li>
+					<li><a href="https://github.com/5g-empower/5g-empower.github.io/wiki">Documentation</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+					<li><a href="https://github.com/5g-empower/">Code</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="container" id="feature1">
+		<div class="holder">
+			<p><h4>use cases</h4></p>
+		</div>
+	</div>
+
+	<div class="container1" id="feature1">
+		<div class="holder">
+			<div class="txtleft"><img src="images/slicing.png" width="470px"></div>
+			<div class="featuretxt">
+				<p><h4 style="text-align:left;">radio slicing</h4></p>
+				5G-EmPOWER allows MVNOs to deploy custom resource allocation schemes within their network slice. The underlying system enforces strict performance isolation between MVNOs and ensures efficient resource utilization across the network in spite of the non-deterministic nature of the wireless medium.
+			</div>
+		</div>
+	</div>
+
+	<div class="container" class="feature2">
+		<div class="holder">
+			<div class="txtright"><img src="images/offloading.png" width="470"></div>
+			<div class="featuretxt2" id="interop">
+				<p><h4 style="text-align:left;">mac offloading</h4></p>
+				In 5G-EmPOWER MAC resources are virtualized making it possible to offload part of them as LVNFs. Notice how, only higher MAC functions can be deployed as LVNF, while the physical layer and the lower MAC are not virtualized. The figure depicts a case where both data–plane (duplicates filtering) and management (probe response generation) functionalities are offloaded to two different CPPs.
+			</div>
+		</div>
+	</div>
+
+	<div class="container1" id="feature1">
+		<div class="holder">
+			<div class="txtleft"><img src="images/chaining.png" width="470px"></div>
+			<div class="featuretxt">
+				<p><h4 style="text-align:left;">service chaining</h4></p>
+				5G-EmPOWER allows to implement custom packet processing operations over a precise portion of the traffic. The figure sketches a simple network service implemented combining radio access (LVAP) and packet processing (LVNF) blocks.
+			</div>
+		</div>
+	</div>
+
+	<br style="clear:both;" />
+
+	<div class="container2">
+		<div class="holder">
+			<p>5G-EmPOWER is available under an <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a></p>
+		</div>
+	</div>
+
+</body>
+
+</html>
